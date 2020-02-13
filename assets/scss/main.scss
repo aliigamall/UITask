@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'din-next-arabic';
+    src: url(../fonts/DinNextRegular.eot);
+    src: url(../fonts/DinNextRegular.eot) format('embedded-opentype'),
+        url(../fonts/DinNextRegular.woff) format('woff'),
+        url(../fonts/DinNextRegular.ttf) format('truetype'),
+        url(../fonts/DinNextRegular.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'din-next-arabic-med';
+    src: url(../fonts/DinNextMedium.eot);
+    src: url(../fonts/DinNextMedium.eot) format('embedded-opentype'),
+        url(../fonts/DinNextMedium.woff) format('woff'),
+        url(../fonts/DinNextMedium.ttf) format('truetype'),
+        url(../fonts/DinNextMedium.svg) format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
 
 *{
     margin: 0;
@@ -10,8 +33,8 @@ ul, ol{
     list-style: none;
 }
 
-$scrollbarBG: rgb(100, 208, 255);
-$thumbBG: rgb(31, 157, 241);
+$scrollbarBG: rgb(230, 230, 230);
+$thumbBG: #080;
 
 body::-webkit-scrollbar {
     width: 11px;
@@ -148,11 +171,15 @@ body::-webkit-scrollbar {
             .navbar{
                 position: relative;
                 z-index: 2;
+                direction: rtl;
+                float: left;
+                padding-left: 80px;
                 @media (max-width: 991.98px){
                     padding: 16px;
                     position: absolute;
                     width: 100%;
                     right: 0;
+                    direction: ltr;
                     .navbar-toggler {
                         color: #fff;
                         border-color: rgb(255, 255, 255);
@@ -182,13 +209,10 @@ body::-webkit-scrollbar {
                 }
                 .navbar__navbar-collapse{
                     .navbar__navbar-collapse__navbar-ul{
-                        direction: rtl;
-                        margin: 0 50px 0 30px;
                         width: 100%;
                         position: relative;
                         z-index: 2;
                         @media (max-width: 991.98px){
-                            margin: 0;
                             text-align: right;
                             width: 100%;
                             background: #fff;
@@ -196,7 +220,6 @@ body::-webkit-scrollbar {
                             padding: 4px 8px;
                         }
                         @media (max-width: 575.98px){
-                            margin: 0;
                             text-align: right;
                             width: 100%;
                             background: #fff;
@@ -204,16 +227,15 @@ body::-webkit-scrollbar {
                             padding: 4px 8px;
                         }
                         .navbar__navbar-collapse__navbar-ul--item{
-                            padding: 4px 14px;
+                            padding: 4px 8px;
                             @media (max-width: 1199.98px){
                                 padding: 4px 0px;
                                 text-align: right;
                             }
                             a{
                                 color: #fff;
-                                font-family: 'din-next-arabic-med';
+                                font-family: 'din-next-arabic';
                                 font-size: 18px;
-                                font-weight: 500;
                                 @media (max-width: 1199.98px){
                                     font-size: 16px;
                                 }
@@ -265,6 +287,7 @@ body::-webkit-scrollbar {
                 position: absolute;
                 top: 0;
                 left: 0;
+                width: 100%;
                 .carousel__carousel-inner{
                     .carousel__carousel-inner--item{
                         @media (max-width: 1199.98px){
@@ -434,25 +457,33 @@ body::-webkit-scrollbar {
             .news__title{
                 width: 100%;
                 height: 100%;
+                position: relative;
                 ul{
-                    color: rgb(182, 182, 182);
                     font-weight: 800;
                     font-family: 'DinNext';
+                    border-bottom: none;
                     li{
                         float: right;
                         margin: 0 0 0 30px;
-                        &:hover{
-                            color: #000;
-                            cursor: pointer;
+                        a{
+                            color: rgb(182, 182, 182);
+                            &:hover{
+                                color: #000;
+                                cursor: pointer;
+                                text-decoration: unset;
+                            }
                         }
                     }
-                    .active{
+                    .active a{
                         color: #000;
                     }
                 }
-                a{
+                .news__title--see-more{
                     float: left;
                     color: #000;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
                     img{
                         position: relative;
                         right: 0px;
@@ -483,7 +514,34 @@ body::-webkit-scrollbar {
                     height: 4px;
                     border-radius: 25px;
                     background-color: #080;
+                    position: relative;
                     @media (max-width: 575.98px){
+                        width: 20%;
+                    }
+                    @media (max-width: 900.98px) and (min-width: 650.98px){
+                        width: 23%;
+                    }
+                }
+                .active{
+                    right: 14%;
+                    width: 14%;
+                    @media (max-width: 1100px) and (min-width: 991px){
+                        right: 20%;
+                    }
+                    @media (max-width: 850.98px) and (min-width: 650.98px){
+                        right: 27%;
+                        width: 30%;
+                    }
+                    @media (max-width: 575.98px){
+                        right: 28%;
+                        width: 30%;
+                    }
+                    @media (max-width: 500.98px) and (min-width: 400.98px){
+                        right: 24%;
+                        width: 30%;
+                    }
+                    @media (max-width: 330.98px){
+                        right: 32%;
                         width: 30%;
                     }
                 }
@@ -501,7 +559,6 @@ body::-webkit-scrollbar {
                         }
                     }
                     a{
-                        position: absolute;
                         top: 0px;
                         left: 0px;
                         img{
@@ -519,6 +576,15 @@ body::-webkit-scrollbar {
         // End News Title
 
         // Start Box News
+
+        .tab-content{
+            .active{
+                display: inline-flex;
+                @media (max-width: 767.98px) { 
+                    display: block;
+                 }
+            }
+        }
 
         .news-box{
             .news-box__card{
@@ -770,6 +836,7 @@ body::-webkit-scrollbar {
                 width: 100%;
                 height: 100%;
                 position: relative;
+                direction: ltr;
                 @media (max-width: 991.98px){
                     height: 500px;
                     margin-bottom: 15px;
@@ -915,7 +982,7 @@ body::-webkit-scrollbar {
                 padding: 36px 16px;
                 background-color: #fff;
                 color: #000;
-                box-shadow: 0px 11px 10px #3333336e;
+                box-shadow: -0.5px 3px 13px 0 rgba(0, 0, 0, 0.11);
                 text-align: right;
                 .survey__left-box-survey--p{
                     margin: 20px 0;
@@ -1020,8 +1087,10 @@ body::-webkit-scrollbar {
                 }
             }
             .copy-right__left-side{
-                text-align: right;
                 height: 100%;
+                float: left;
+                position: relative;
+                left: 4%;
                 .copy-right__left-side__ul{
                     height: 100%;
                     .copy-right__left-side__ul--li{
