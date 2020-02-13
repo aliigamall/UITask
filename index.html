@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap 4 Link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- Fonts Link -->
-    <link rel="stylesheet" href="assets/fonts/DINNextLTArabic-Medium-2.ttf">
-    <link rel="stylesheet" href="assets/fonts/DINNextLTArabic-Regular-2.ttf">
     <!-- Css Link -->
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Document</title>
@@ -33,7 +30,7 @@
                         <div class="header__upper-bar">
                             <ul class="header__upper-bar--upper-ul">
                                 <li class="header__upper-bar--upper-ul--li">
-                                    <a href="#"><img src="assets/images/css-31.svg"></a>
+                                    <a href="#"><img src="assets/images/css-3.svg"></a>
                                 </li>
                                 <li class="header__upper-bar--upper-ul--li">
                                     <a href="#"><img src="assets/images/eye.svg"></a>
@@ -93,7 +90,7 @@
 
                     <div class="col-md-4">
                         <div class="brand-logo">
-                            <img class="brand-logo__img" src="assets/images/html-51.svg" alt="">
+                            <img class="brand-logo__img" src="assets/images/html-5.svg" alt="">
                             <img class="brand-logo__img" src="assets/images/html.svg" alt="">
                         </div>
                     </div>
@@ -167,17 +164,17 @@
                 <div class="row">
                     <!-- Start News Title -->
                     <div class="news__title">
-                        <ul>
-                            <li class="active"><h2>أحدث الأخبار</h2></li>
-                            <li><h2>أخبار المحافظات</h2></li>
+                        <ul id="change-tab" class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#latestnews"><h2>أحدث الأخبار</h2></a></li>
+                            <li><a data-toggle="tab" href="#govnews"><h2>أخبار المحافظات</h2></a></li>
                         </ul>
-                        <a href="#">
+                        <a class="news__title--see-more" href="#">
                             <span>عرض الكل</span>
                             <img src="assets/images/arrow.svg" alt="">
                         </a>
                     </div>
 
-                    <div class="border-space">
+                    <div id="border-active" class="border-space">
                         <div class="border-space__seprated"></div>
                     </div>
 
@@ -185,56 +182,120 @@
 
                     <!-- Start News Box -->
 
-                    <div class="col-md-4">
-                        <div class="news-box">
-                            <div class="card news-box__card">
-                                <img src="assets/images/img--news-one.jpg" class="card-img-top" alt="news">
-                                <div class="card-body news-box__card__card-body">
-                                    <h6 class="card-subtitle text-muted news-box__card__card-body--card-subtitle">
-                                        الأحد 27 أكتوبر 2019</h6>
-                                    <h5 class="card-title news-box__card__card-body--card-title">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة المدنية</h5>
-                                    <p class="card-text news-box__card__card-body--card-text">
-                                        عمل على نشر المعرفة والتوعية  بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+                    <div class="tab-content">
 
-                                    </p>
+                        <div id="latestnews" class="tab-pane fade active show">
+
+                            <div class="col-md-4">
+                                <div class="news-box">
+                                    <div class="card news-box__card">
+                                        <img src="assets/images/img--news-one.jpg" class="card-img-top" alt="news">
+                                        <div class="card-body news-box__card__card-body">
+                                            <h6 class="card-subtitle text-muted news-box__card__card-body--card-subtitle">
+                                                الأحد 27 أكتوبر 2019</h6>
+                                            <h5 class="card-title news-box__card__card-body--card-title">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة المدنية</h5>
+                                            <p class="card-text news-box__card__card-body--card-text">
+                                                عمل على نشر المعرفة والتوعية  بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+        
+                                            </p>
+                                        </div>
+                                      </div>
                                 </div>
-                              </div>
+                            </div>
+        
+                            <div class="col-md-4">
+                                <div class="news-box">
+                                    <div class="card news-box__card">
+                                        <img src="assets/images/img--news-two.jpg" class="card-img-top" alt="news">
+                                        <div class="card-body news-box__card__card-body">
+                                            <h6 class="card-subtitle text-muted news-box__card__card-body--card-subtitle">
+                                                الأحد 27 أكتوبر 2019</h6>
+                                            <h5 class="card-title news-box__card__card-body--card-title">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة المدنية</h5>
+                                            <p class="card-text news-box__card__card-body--card-text">
+                                                عمل على نشر المعرفة والتوعية  بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+        
+                                            </p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-md-4">
+                                <div class="news-box">
+                                    <div class="card news-box__card">
+                                        <img src="assets/images/img--news-three.jpg" class="card-img-top" alt="news">
+                                        <div class="card-body news-box__card__card-body">
+                                            <h6 class="card-subtitle text-muted news-box__card__card-body--card-subtitle">
+                                                الأحد 27 أكتوبر 2019</h6>
+                                            <h5 class="card-title news-box__card__card-body--card-title">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة المدنية</h5>
+                                            <p class="card-text news-box__card__card-body--card-text">
+                                                عمل على نشر المعرفة والتوعية  بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+        
+                                            </p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+
                         </div>
+
+                        <div id="govnews" class="tab-pane fade ">
+
+                            <div class="col-md-4">
+                                <div class="news-box">
+                                    <div class="card news-box__card">
+                                        <img src="assets/images/img--news-three.jpg" class="card-img-top" alt="news">
+                                        <div class="card-body news-box__card__card-body">
+                                            <h6 class="card-subtitle text-muted news-box__card__card-body--card-subtitle">
+                                                الأحد 27 أكتوبر 2019</h6>
+                                            <h5 class="card-title news-box__card__card-body--card-title">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة المدنية</h5>
+                                            <p class="card-text news-box__card__card-body--card-text">
+                                                عمل على نشر المعرفة والتوعية  بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+        
+                                            </p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-md-4">
+                                <div class="news-box">
+                                    <div class="card news-box__card">
+                                        <img src="assets/images/img--news-one.jpg" class="card-img-top" alt="news">
+                                        <div class="card-body news-box__card__card-body">
+                                            <h6 class="card-subtitle text-muted news-box__card__card-body--card-subtitle">
+                                                الأحد 27 أكتوبر 2019</h6>
+                                            <h5 class="card-title news-box__card__card-body--card-title">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة المدنية</h5>
+                                            <p class="card-text news-box__card__card-body--card-text">
+                                                عمل على نشر المعرفة والتوعية  بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+        
+                                            </p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-md-4">
+                                <div class="news-box">
+                                    <div class="card news-box__card">
+                                        <img src="assets/images/img--news-two.jpg" class="card-img-top" alt="news">
+                                        <div class="card-body news-box__card__card-body">
+                                            <h6 class="card-subtitle text-muted news-box__card__card-body--card-subtitle">
+                                                الأحد 27 أكتوبر 2019</h6>
+                                            <h5 class="card-title news-box__card__card-body--card-title">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة المدنية</h5>
+                                            <p class="card-text news-box__card__card-body--card-text">
+                                                عمل على نشر المعرفة والتوعية  بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+        
+                                            </p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <div class="col-md-4">
-                        <div class="news-box">
-                            <div class="card news-box__card">
-                                <img src="assets/images/img--news-two.jpg" class="card-img-top" alt="news">
-                                <div class="card-body news-box__card__card-body">
-                                    <h6 class="card-subtitle text-muted news-box__card__card-body--card-subtitle">
-                                        الأحد 27 أكتوبر 2019</h6>
-                                    <h5 class="card-title news-box__card__card-body--card-title">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة المدنية</h5>
-                                    <p class="card-text news-box__card__card-body--card-text">
-                                        عمل على نشر المعرفة والتوعية  بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
-
-                                    </p>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="news-box">
-                            <div class="card news-box__card">
-                                <img src="assets/images/img--news-three.jpg" class="card-img-top" alt="news">
-                                <div class="card-body news-box__card__card-body">
-                                    <h6 class="card-subtitle text-muted news-box__card__card-body--card-subtitle">
-                                        الأحد 27 أكتوبر 2019</h6>
-                                    <h5 class="card-title news-box__card__card-body--card-title">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة المدنية</h5>
-                                    <p class="card-text news-box__card__card-body--card-text">
-                                        عمل على نشر المعرفة والتوعية  بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
-
-                                    </p>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
 
                     <!-- End News Box -->
                     
@@ -458,8 +519,8 @@
                             </label>
                           </div>
                           <div class="form-btn survey__left-box-survey__form-btn">
-                            <button type="button" class="btn btn-success btn-sm survey__left-box-survey__form-btn--btn">تصويت</button>
-                            <button type="button" class="btn btn-light btn-sm survey__left-box-survey__form-btn--btn">النتائج</button>
+                            <button type="button" class="btn btn-success btn-sm survey__left-box-survey__form-btn--btn"><span>تصويت</span></button>
+                            <button type="button" class="btn btn-light btn-sm survey__left-box-survey__form-btn--btn"><span>النتائج</span></button>
                           </div>
                     </div>
                 </div>

@@ -26,8 +26,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'din-next-arabic';
-    font-family: 'din-next-arabic-med';
 }
 ul, ol{
     list-style: none;
@@ -53,22 +51,39 @@ body::-webkit-scrollbar {
   }
 
 .page{
+    font-family: 'din-next-arabic';
     .scroll-top{
         position: fixed;
         left: 3%;
         bottom: 3%;
         background-color: #cca53b;
         transform: rotate(90deg);
-        padding: 7px 10px;
         border-radius: 50%;
         z-index: 9999;
-        width: 34px;
+        width: 40px;
+        height: 40px;
         display: none;
         img{
-            width: 100%;
+            width: 40%;
+            position: absolute;
+            top: 17%;
+            left: 27%;
         }
         &:hover{
             cursor: pointer;
+            background-color: #a5811f;
+            img{
+                animation: scrollTop .5s ease-in-out infinite alternate-reverse;
+            }
+        }
+
+        @keyframes scrollTop {
+            from{
+                transform: translateX(0px);
+            }
+            to{
+                transform: translateX(-5px);
+            }
         }
     }
     .page-inner{
@@ -101,9 +116,8 @@ body::-webkit-scrollbar {
                     .header__upper-bar--upper-ul--li{
                         float: left;
                         color: #fff;
-                        font-family: DinNext;
+                        font-family: 'din-next-arabic';
                         font-size: 16px;
-                        font-weight: normal;
                         margin: 11px 0px;
                         line-height: 2;
                         a{
@@ -133,7 +147,7 @@ body::-webkit-scrollbar {
                             content: " | ";
                             padding: 0 28px;
                             @media (max-width: 1199.98px){
-                                padding: 0 16px;
+                                padding: 0 14px;
                             }
                             @media (max-width: 991.98px){
                                 padding: 0 50px;
@@ -313,12 +327,16 @@ body::-webkit-scrollbar {
                             text-align: right;
                             width: 50%;
                             color: #fff;
+                            font-family: 'din-next-arabic-med';
                             h3{
                                 margin: 25px 0;
                             }
                             p{
-                                width: 76%;
-                                line-height: 3;
+                                width: 90%;
+                                line-height: 1.7;
+                                font-family: "din-next-arabic";
+                                font-size: 1.3rem;
+                                margin-bottom: 2.4rem;
                             }
                             button{
                                 padding: 2px 4px;
@@ -327,13 +345,13 @@ body::-webkit-scrollbar {
                                 width: 40%;
                                 line-height: 2;
                                 background-color: #fff;
-                                font-weight: 700;
                                 font-size: 18px;
+                                font-family: "din-next-arabic-med";
                                 text-align: center;
                                 img{
                                     position: relative;
                                     right: -54px;
-                                    top: -2px;
+                                    top: -4px;
                                     background-color: #000;
                                     padding: 6px 10px;
                                     border-radius: 30px;
@@ -459,8 +477,7 @@ body::-webkit-scrollbar {
                 height: 100%;
                 position: relative;
                 ul{
-                    font-weight: 800;
-                    font-family: 'DinNext';
+                    font-family: "din-next-arabic-med";
                     border-bottom: none;
                     li{
                         float: right;
@@ -471,6 +488,15 @@ body::-webkit-scrollbar {
                                 color: #000;
                                 cursor: pointer;
                                 text-decoration: unset;
+                            }
+                            h2{
+                                font-size: 2.5rem;
+                                @media (max-width: 575.98px){
+                                    font-size: 1.1rem;
+                                }
+                                @media (max-width: 330.98px){
+                                    font-size: 1rem;
+                                }
                             }
                         }
                     }
@@ -523,13 +549,13 @@ body::-webkit-scrollbar {
                     }
                 }
                 .active{
-                    right: 14%;
+                    right: 19%;
                     width: 14%;
                     @media (max-width: 1100px) and (min-width: 991px){
-                        right: 20%;
+                        right: 26%;
                     }
                     @media (max-width: 850.98px) and (min-width: 650.98px){
-                        right: 27%;
+                        right: 35%;
                         width: 30%;
                     }
                     @media (max-width: 575.98px){
@@ -595,9 +621,9 @@ body::-webkit-scrollbar {
                         margin: 20px 0;
                     }
                     .news-box__card__card-body--card-title{
-                        font-size: 1.3rem;
+                        font-size: 1.4rem;
                         color: #000;
-                        font-weight: 900;
+                        font-family: 'din-next-arabic-med';
                         width: 80%;
                         @media (max-width: 991.98px){
                             font-size: 1rem;
@@ -606,6 +632,7 @@ body::-webkit-scrollbar {
                     }
                     .news-box__card__card-body--card-text{
                         margin-top: 20px;
+                        font-size: 15px;
                     }
                 }
             }
@@ -647,13 +674,16 @@ body::-webkit-scrollbar {
                 ul{
                     color: rgb(182, 182, 182);
                     font-weight: 800;
-                    font-family: 'DinNext';
+                    font-family: "din-next-arabic-med";
                     li{
                         float: right;
                         margin: 0 0 0 30px;
                         &:hover{
                             color: #000;
                             cursor: pointer;
+                        }
+                        h2{
+                            font-size: 2.5rem;
                         }
                     }
                     .active{
@@ -767,12 +797,12 @@ body::-webkit-scrollbar {
                 position: absolute;
                 right: 0;
                 left: 0;
-                bottom: 10%;
+                width: 70%;
+                top: 78%;
                 text-align: center;
                 color: #fff;
-                font-size: 18px;
-                font-weight: 800;
-                width: 50%;
+                font-size: 1.3rem;
+                font-family: "din-next-arabic-med";
                 margin: auto;
             }
             .box-service__overlay{
@@ -787,13 +817,15 @@ body::-webkit-scrollbar {
                 z-index: 2;
                 transition: all .5s ease-in-out;
                 .box-service__overlay__title{
-                    font-size: 20px;
-                    font-weight: 800;
+                    font-size: 1.3rem;
+                    width: 90%;
+                    font-family: "din-next-arabic-med";
                     color: #000;
                     margin-top: 1rem;
                 }
                 .box-service__overlay__long-p{
-                    font-size: 16px;
+                    font-size: 15px;
+                    font-family: "din-next-arabic";
                     margin-top: 10px;
                     margin-bottom: 20px;
                 }
@@ -842,7 +874,7 @@ body::-webkit-scrollbar {
                     margin-bottom: 15px;
                 }
                 @media (max-width: 575.98px){
-                    height: 440px;
+                    height: 460px;
                     margin-bottom: 15px;
                 }
                 // Start Slider
@@ -881,22 +913,27 @@ body::-webkit-scrollbar {
                             .carousel__carousel-inner--item-content{
                                 position: absolute;
                                 top: 3%;
-                                right: 80px;
+                                right: 4%;
                                 direction: rtl;
                                 text-align: right;
-                                width: 50%;
+                                width: 60%;
                                 color: #000;
                                 h1{
-                                    font-size: 3rem;
+                                    font-size: 2.9rem;
                                     margin: 0;
+                                    font-family: "din-next-arabic-med";
                                 }
                                 h3{
                                     margin: 16px 0;
+                                    font-family: "din-next-arabic";
+                                    font-size: 2.7rem;
                                 }
                                 p{
                                     width: 85%;
                                     line-height: 2;
-                                    margin-bottom: 0;
+                                    margin-bottom: 10px;
+                                    font-family: "din-next-arabic";
+                                    font-size: 15px;
                                 }
                                 button{
                                     border: none;
@@ -948,10 +985,10 @@ body::-webkit-scrollbar {
                                 }
                         }
                         .carousel__carousel-inner--item-content--img{
-                            width: 40%;
+                            width: 30%;
                             position: absolute;
-                            bottom: 6%;
-                            left: 3%;
+                            bottom: 12%;
+                            left: 4%;
                             @media (max-width: 1199.98px){
                                 bottom: 0;
                             }
@@ -984,15 +1021,21 @@ body::-webkit-scrollbar {
                 color: #000;
                 box-shadow: -0.5px 3px 13px 0 rgba(0, 0, 0, 0.11);
                 text-align: right;
+                h3{
+                    font-family: "din-next-arabic-med";
+                    font-size: 1.66rem;
+                }
                 .survey__left-box-survey--p{
                     margin: 20px 0;
-                    font-size: 16px;
-                    font-weight: 600;
+                    font-family: "din-next-arabic-med";
+                    font-size: 18px;
                     color: #000;
                 }
                 .survey__left-box-survey__form-check{
                     color: #4e4e4e;
                     .survey__left-box-survey__form-check--label{
+                        font-family: "din-next-arabic-med";
+                        font-size: 18px;
                         margin-right: 12%;
                         @media (max-width: 991.98px){
                             margin-right: 4%;
@@ -1012,9 +1055,16 @@ body::-webkit-scrollbar {
                         width: 40%;
                         margin: 0 4%;
                         border-radius: 20px;
+                        font-family: "din-next-arabic";
+                        font-size: 18px;
                         @media (max-width: 1199.98px){
                             width: 100%;
                             margin: 5px auto;
+                        }
+                        span{
+                            position: relative;
+                            top: -4px;
+                            left: 0;
                         }
                     }
                 }
@@ -1044,17 +1094,19 @@ body::-webkit-scrollbar {
                 text-align: right;
                 .footer__list--heading{
                     margin-bottom: 20px;
-                    font-size: 1.2rem;
+                    font-size: 1.3rem;
+                    font-family: "din-next-arabic-med";
                 }
                 .footer__list__ul{
-                    color: #565354;
-                    font-size: 13px;
                     .footer__list__ul--li{
                         margin: 15px 0;
                         a{
-                            color: #565354;
+                            font-family: "din-next-arabic";
+                            font-size: 15px;
+                            color: #373435;
                             &:hover{
                                 text-decoration: none;
+                                color: #000;
                             }
                         }
                     }
@@ -1076,12 +1128,14 @@ body::-webkit-scrollbar {
             height: 100%;
             padding: 20px 80px;
             direction: rtl;
-            font-size: 14px;
+            font-family: "din-next-arabic";
+            font-size: 15px;
             @media (max-width: 575.98px){
                 padding: 20px 10px;
             }
             .copy-right__right-side{
                 text-align: right;
+                color: #373435;
                 @media (max-width: 575.98px){
                     margin-bottom: 15px;
                 }
@@ -1096,9 +1150,10 @@ body::-webkit-scrollbar {
                     .copy-right__left-side__ul--li{
                         float: right;
                         a{
-                            color: #565354;
+                            color: #373435;
                             &:hover{
                                 text-decoration: none;
+                                color: #000;
                             }
                         }
                         &:not(:last-child)::after{
@@ -1111,7 +1166,7 @@ body::-webkit-scrollbar {
             }
         }
 
-        // Start CopyRight
+        // End CopyRight
 
 
     }
