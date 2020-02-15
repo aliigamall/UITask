@@ -1,10 +1,20 @@
 $(document).ready(function(){
 
-    // Slider Height
+    // Slider & Search Height
 
     const winH = $(window).height();
 
-    $("header, header .carousel__carousel-inner--item").height(winH);
+    $("header, header .carousel__carousel-inner--item, .search-page").height(winH);
+
+    // Search show-hide
+
+    $("#search-icon").click(function(){
+        $("#search-page").show()
+    });
+
+    $("#close-search").click(function(){
+        $("#search-page").hide()
+    });
 
     // News Tabs
 

@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Css Link -->
     <link rel="stylesheet" href="assets/css/main.css">
-    <title>Document</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="assets/images/five.png"/>
+    <title>HTML5</title>
 </head>
 <body class="page">
 
     <div class="scroll-top">
         <img src="assets/images/arrow.svg">
+    </div>
+
+    <div class="search-page" id="search-page">
+        <img id="close-search" src="assets/images/close.png" alt="">
+        <input type="text" placeholder="Search">
+        <button type="submit">Search</button>
     </div>
 
     <div class="page-inner">
@@ -30,7 +38,7 @@
                         <div class="header__upper-bar">
                             <ul class="header__upper-bar--upper-ul">
                                 <li class="header__upper-bar--upper-ul--li">
-                                    <a href="#"><img src="assets/images/css-3.svg"></a>
+                                    <a href="#"><img src="assets/images/css3.png"></a>
                                 </li>
                                 <li class="header__upper-bar--upper-ul--li">
                                     <a href="#"><img src="assets/images/eye.svg"></a>
@@ -75,7 +83,7 @@
                                 <li class="nav-item navbar__navbar-collapse__navbar-ul--item">
                                   <a class="nav-link" href="#"> المركز الأعلامى</a>
                                 </li>
-                                <li class="nav-item navbar__navbar-collapse__navbar-ul--item">
+                                <li id="search-icon" class="nav-item navbar__navbar-collapse__navbar-ul--item">
                                   <a class="nav-link" href="#"><img src="assets/images/search.svg"></a>
                                 </li>
                               </ul>
@@ -90,7 +98,7 @@
 
                     <div class="col-md-4">
                         <div class="brand-logo">
-                            <img class="brand-logo__img" src="assets/images/html-5.svg" alt="">
+                            <img class="brand-logo__img" src="assets/images/html5.png" alt="">
                             <img class="brand-logo__img" src="assets/images/html.svg" alt="">
                         </div>
                     </div>
@@ -108,7 +116,7 @@
                         <div class="carousel-inner carousel__carousel-inner">
                           <div class="carousel-item carousel__carousel-inner--item active">
                             <img src="assets/images/slider-img-one.jpg" class="d-block w-100" alt="img1">
-                            <div class="carousel__carousel-inner--item-content">
+                            <div class="carousel__carousel-inner--item-main-content">
                                 <h1>اليوم الوطني (89) معاً نجدد الولاء</h1>
                                 <h3>وطن طموح مواطنه مسؤول</h3>
                                 <P>
@@ -121,7 +129,7 @@
                           </div>
                           <div class="carousel-item carousel__carousel-inner--item">
                             <img src="assets/images/slider-img-two.jpg" class="d-block w-100" alt="img2">
-                            <div class="carousel__carousel-inner--item-content">
+                            <div class="carousel__carousel-inner--item-main-content">
                                 <h1>اليوم الوطني (89) معاً نجدد الولاء</h1>
                                 <h3>وطن طموح مواطنه مسؤول</h3>
                                 <P>
@@ -134,7 +142,7 @@
                           </div>
                           <div class="carousel-item carousel__carousel-inner--item">
                             <img src="assets/images/slider-img-one.jpg" class="d-block w-100" alt="img3">
-                            <div class="carousel__carousel-inner--item-content">
+                            <div class="carousel__carousel-inner--item-main-content">
                                 <h1>اليوم الوطني (89) معاً نجدد الولاء</h1>
                                 <h3>وطن طموح مواطنه مسؤول</h3>
                                 <P>
@@ -416,17 +424,17 @@
 
                         <!-- Start Slider -->
     
-                        <div id="slider-survey" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators carousel__carousel-indicators">
-                              <li data-target="#slider-survey" data-slide-to="0" class="active carousel__carousel-indicators--item"></li>
-                              <li data-target="#slider-survey" data-slide-to="1" class="carousel__carousel-indicators--item"></li>
-                              <li data-target="#slider-survey" data-slide-to="2" class="carousel__carousel-indicators--item"></li>
+                        <div id="slider-survey" class="carousel carousel-survey slide" data-ride="carousel">
+                            <ol class="carousel-indicators carousel-survey__carousel-indicators">
+                              <li data-target="#slider-survey" data-slide-to="0" class="active carousel-survey__carousel-indicators--item"></li>
+                              <li data-target="#slider-survey" data-slide-to="1" class="carousel-survey__carousel-indicators--item"></li>
+                              <li data-target="#slider-survey" data-slide-to="2" class="carousel-survey__carousel-indicators--item"></li>
                             </ol>
-                            <div class="carousel-inner carousel__carousel-inner">
+                            <div class="carousel-inner carousel-survey__carousel-inner">
 
-                              <div class="carousel-item carousel__carousel-inner--item active">
+                              <div class="carousel-item carousel-survey__carousel-inner--item w-100 active">
                                 <img src="assets/images/bg-survey.jpg" class="d-block w-100" alt="img1">
-                                <div class="carousel__carousel-inner--item-content">
+                                <div class="carousel-survey__carousel-inner--item-content">
                                     <h1>تطبيقات الجوال</h1>
                                     <h3>تطبيق إمارة منطقة الرياض 01</h3>
                                     <P>
@@ -439,14 +447,14 @@
                                         <img src="assets/images/avilable-on-google.png">
                                     </button>
                                 </div>
-                                <div class="carousel__carousel-inner--item-content--img">
+                                <div class="carousel-survey__carousel-inner--item-content--img">
                                     <img src="assets/images/survey-mob.png" alt="survey">
                                 </div>
                               </div>
 
-                              <div class="carousel-item carousel__carousel-inner--item">
+                              <div class="carousel-item carousel-survey__carousel-inner--item w-100">
                                 <img src="assets/images/bg-survey.jpg" class="d-block w-100" alt="img1">
-                                <div class="carousel__carousel-inner--item-content">
+                                <div class="carousel-survey__carousel-inner--item-content">
                                     <h1>تطبيقات الجوال</h1>
                                     <h3>تطبيق إمارة منطقة الرياض 01</h3>
                                     <P>
@@ -459,14 +467,14 @@
                                         <img src="assets/images/avilable-on-google.png">
                                     </button>
                                 </div>
-                                <div class="carousel__carousel-inner--item-content--img">
+                                <div class="carousel-survey__carousel-inner--item-content--img">
                                     <img src="assets/images/survey-mob.png" alt="survey">
                                 </div>
                               </div>
 
-                              <div class="carousel-item carousel__carousel-inner--item">
+                              <div class="carousel-item carousel-survey__carousel-inner--item w-100">
                                 <img src="assets/images/bg-survey.jpg" class="d-block w-100" alt="img1">
-                                <div class="carousel__carousel-inner--item-content">
+                                <div class="carousel-survey__carousel-inner--item-content">
                                     <h1>تطبيقات الجوال</h1>
                                     <h3>تطبيق إمارة منطقة الرياض 01</h3>
                                     <P>
@@ -479,7 +487,7 @@
                                         <img src="assets/images/avilable-on-google.png">
                                     </button>
                                 </div>
-                                <div class="carousel__carousel-inner--item-content--img">
+                                <div class="carousel-survey__carousel-inner--item-content--img">
                                     <img src="assets/images/survey-mob.png" alt="survey">
                                 </div>
                               </div>
