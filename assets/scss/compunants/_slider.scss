@@ -1,175 +1,178 @@
+// Start Slider
 
+.carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 
-            // Start Slider
+.carousel__carousel-inner {
+  width: 100%;
+}
 
-            .carousel{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                .carousel__carousel-inner{
-                    width: 100%;
-                    .carousel__carousel-inner--item{
-                        width: 100%;
-                            img{
-                                height: 100%;
-                            }
-                        .carousel__carousel-inner--item-main-content{
-                            position: absolute;
-                            top: 36%;
-                            right: 80px;
-                            direction: rtl;
-                            text-align: right;
-                            width: 50%;
-                            color: #fff;
-                            font-family: 'din-next-arabic-med';
-                            h3{
-                                margin: 25px 0;
-                            }
-                            p{
-                                width: 90%;
-                                line-height: 1.7;
-                                font-family: "din-next-arabic";
-                                font-size: 1.3rem;
-                                margin-bottom: 2.4rem;
-                            }
-                            button{
-                                padding: 2px 4px;
-                                border-radius: 25px;
-                                border: none;
-                                width: 40%;
-                                line-height: 2;
-                                background-color: #fff;
-                                font-size: 18px;
-                                font-family: "din-next-arabic-med";
-                                text-align: center;
-                                img{
-                                    position: relative;
-                                    right: -54px;
-                                    top: -4px;
-                                    background-color: #000;
-                                    padding: 6px 10px;
-                                    border-radius: 30px;
-                                    transition: all .5s ease-in-out;
-                                }
-                                span{
-                                    position: relative;
-                                    right: -10px;
-                                }
-                                &:hover{
-                                    img{
-                                        transform: translateX(-10px);
-                                    }
-                                }
-                            }
-                            @media (max-width: 1199.98px){
-                                top: 40%;
-                                width: 64%;
-                            }
-                            @media (max-width: 991.98px){
-                                top: 50%;
-                                right: 22px;
-                                width: 100%;
-                                h1{
-                                    margin: 30px 0;
-                                    font-size: 2.5rem;
-                                }
-                                h3{
-                                    margin: 25px 0;
-                                    font-size: 1.8rem;
-                                }
-                                p{
-                                    width: 70%;
-                                    line-height: 2;
-                                    font-size: 18px;
-                                }
-                                button{
-                                    width: 30%;
-                                    font-size: 16px;
-                                    img{
-                                        right: -42px;
-                                        top: -1px;
-                                    }
-                                    span{
-                                        right: -15px;
-                                    }
-                                }
-                            }
-                            @media (max-width: 575.98px){
-                                top: 25%;
-                                right: 10px;
-                                width: 100%;
-                                h1{
-                                    margin: 15px 0;
-                                    font-size: 1.5rem;
-                                }
-                                h3{
-                                    margin: 15px 0;
-                                    font-size: 1.2rem;
-                                }
-                                p{
-                                    width: 90%;
-                                    line-height: 2;
-                                    font-size: 14px;
-                                }
-                                button{
-                                    width: 90%;
-                                    font-size: 16px;
-                                    img{
-                                        right: -92px;
-                                    }
-                                    span{
-                                        right: -15px;
-                                    }
-                                }
-                            }
-                            @media (max-width: 414.98px) and (min-width: 400.98px){
-                                button{
-                                    width: 90%;
-                                    font-size: 16px;
-                                    img{
-                                        right: -112px;
-                                    }
-                                    span{
-                                        right: -15px;
-                                    }
-                                }
-                            }
-                            @media (max-width: 470.98px) and (min-width: 422.98px){
-                                button{
-                                    width: 90%;
-                                    font-size: 16px;
-                                    img{
-                                        right: -122px;
-                                        top: -2px;
-                                    }
-                                }
-                            }
-                            @media (max-width: 700.98px) and (min-width: 471.98px){
-                                button{
-                                    width: 90%;
-                                    font-size: 16px;
-                                    img{
-                                        right: -144px;
-                                        top: -2px;
-                                    }
-                                }
-                            }
-                            @media (max-width: 320.98px){
-                                button{
-                                    width: 90%;
-                                    font-size: 16px;
-                                    img{
-                                        right: -72px;
-                                    }
-                                    span{
-                                        right: -15px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+.carousel__carousel-inner--item {
+  width: 100%;
+}
 
-            // End Slider
+.carousel__carousel-inner--img {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel__carousel-inner--content {
+  position: absolute;
+  top: 36%;
+  right: 80px;
+  direction: rtl;
+  text-align: right;
+  width: 50%;
+  color: #fff;
+  font-family: "din-next-arabic-med";
+  @media (max-width: 1199.98px) {
+    top: 40%;
+    width: 64%;
+  }
+  @media (max-width: 991.98px) {
+    top: 50%;
+    right: 22px;
+    width: 100%;
+  }
+  @media (max-width: 575.98px) {
+    top: 25%;
+    right: 10px;
+    width: 100%;
+  }
+}
+
+.carousel__carousel-inner--heading-one {
+  @media (max-width: 991.98px) {
+    margin: 30px 0;
+    font-size: 2.5rem;
+  }
+  @media (max-width: 575.98px) {
+    margin: 15px 0;
+    font-size: 1.5rem;
+  }
+}
+
+.carousel__carousel-inner--heading-three {
+  margin: 25px 0;
+  @media (max-width: 991.98px) {
+    margin: 25px 0;
+    font-size: 1.8rem;
+  }
+  @media (max-width: 575.98px) {
+    margin: 15px 0;
+    font-size: 1.2rem;
+  }
+}
+
+.carousel__carousel-inner--pragraph {
+  width: 90%;
+  line-height: 1.7;
+  font-family: "din-next-arabic";
+  font-size: 1.3rem;
+  margin-bottom: 2.4rem;
+  @media (max-width: 991.98px) {
+    width: 70%;
+    line-height: 2;
+    font-size: 18px;
+  }
+  @media (max-width: 575.98px) {
+    width: 90%;
+    line-height: 2;
+    font-size: 14px;
+  }
+}
+
+.carousel__carousel-inner--see-more {
+  padding: 2px 4px;
+  border-radius: 25px;
+  border: none;
+  width: 40%;
+  line-height: 2;
+  background-color: #fff;
+  font-size: 18px;
+  font-family: "din-next-arabic-med";
+  text-align: center;
+  &:hover {
+    .carousel__carousel-inner--see-more-img {
+      transform: translateX(-10px);
+    }
+  }
+  @media (max-width: 991.98px) {
+    width: 30%;
+    font-size: 16px;
+  }
+  @media (max-width: 575.98px) {
+    width: 90%;
+    font-size: 16px;
+  }
+  @media (max-width: 414.98px) and (min-width: 400.98px) {
+    width: 90%;
+    font-size: 16px;
+  }
+  @media (max-width: 470.98px) and (min-width: 422.98px) {
+    width: 90%;
+    font-size: 16px;
+  }
+  @media (max-width: 700.98px) and (min-width: 471.98px) {
+    width: 90%;
+    font-size: 16px;
+  }
+  @media (max-width: 320.98px) {
+    width: 90%;
+    font-size: 16px;
+  }
+}
+
+.carousel__carousel-inner--see-more-img {
+  position: relative;
+  right: -54px;
+  top: -4px;
+  background-color: #000;
+  padding: 6px 10px;
+  border-radius: 30px;
+  transition: all 0.5s ease-in-out;
+  @media (max-width: 991.98px) {
+    right: -42px;
+    top: -1px;
+  }
+  @media (max-width: 575.98px) {
+    right: -92px;
+  }
+  @media (max-width: 414.98px) and (min-width: 400.98px) {
+    right: -112px;
+  }
+  @media (max-width: 470.98px) and (min-width: 422.98px) {
+    right: -122px;
+    top: -2px;
+  }
+  @media (max-width: 700.98px) and (min-width: 471.98px) {
+    right: -144px;
+    top: -2px;
+  }
+  @media (max-width: 320.98px) {
+    right: -72px;
+  }
+}
+
+.carousel__carousel-inner--see-more-span {
+  position: relative;
+  right: -10px;
+  @media (max-width: 991.98px) {
+    right: -15px;
+  }
+  @media (max-width: 575.98px) {
+    right: -15px;
+  }
+  @media (max-width: 414.98px) and (min-width: 400.98px) {
+    right: -15px;
+  }
+  @media (max-width: 320.98px) {
+    right: -15px;
+  }
+}
+
+// End Slider

@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap 4 Link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Css Link -->
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="assets/images/five.png"/>
+    <link rel="shortcut icon" type="image/png" href="assets/images/five.png" />
     <title>HTML5</title>
 </head>
+
 <body class="page">
 
     <div class="scroll-top">
-        <img src="assets/images/arrow.svg">
+        <img class="scroll-top__img" src="assets/images/arrow.svg">
     </div>
 
     <div class="search-page" id="search-page">
-        <img id="close-search" src="assets/images/close.png" alt="">
-        <input type="text" placeholder="Search">
-        <button type="submit">Search</button>
+        <img class="search-page__img-close" id="close-search" src="assets/images/close.png" alt="close">
+        <input class="search-page__input-search" type="text" placeholder="Search">
+        <button class="search-page__button-search" type="submit">Search</button>
     </div>
 
     <div class="page-inner">
@@ -36,19 +39,31 @@
                     <div class="col-lg-6">
 
                         <div class="header__upper-bar">
-                            <ul class="header__upper-bar--upper-ul">
-                                <li class="header__upper-bar--upper-ul--li">
-                                    <a href="#"><img src="assets/images/css3.png"></a>
+                            <ul class="header__upper-bar--list">
+                                <li class="header__upper-bar--list-item">
+                                    <a class="header__upper-bar--link" href="#">
+                                        <img class="header__upper-bar--img" src="assets/images/css3.png">
+                                    </a>
                                 </li>
-                                <li class="header__upper-bar--upper-ul--li">
-                                    <a href="#"><img src="assets/images/eye.svg"></a>
+                                <li class="header__upper-bar--list-item">
+                                    <a class="header__upper-bar--link" href="#">
+                                        <img class="header__upper-bar--img" src="assets/images/eye.svg">
+                                    </a>
                                 </li>
-                                <li class="header__upper-bar--upper-ul--li"><a href="#">English</li></a>
-                                <li class="header__upper-bar--upper-ul--li">
-                                    <a href="#"><span>أتصل بنا </span> <img src="assets/images/mail.svg"></a>
+                                <li class="header__upper-bar--list-item">
+                                    <a class="header__upper-bar--link" href="#">English</a>
                                 </li>
-                                <li class="header__upper-bar--upper-ul--li">
-                                    <a href="#"><span>تطبيقات الجوال </span> <img src="assets/images/mob.svg"></a>
+                                <li class="header__upper-bar--list-item">
+                                    <a class="header__upper-bar--link" href="#">
+                                        <span class="header__upper-bar--span">أتصل بنا </span>
+                                        <img class="header__upper-bar--img" src="assets/images/mail.svg">
+                                    </a>
+                                </li>
+                                <li class="header__upper-bar--list-item">
+                                    <a class="header__upper-bar--link" href="#">
+                                        <span class="header__upper-bar--span">تطبيقات الجوال </span>
+                                        <img class="header__upper-bar--img" src="assets/images/mob.svg">
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -62,34 +77,42 @@
                     <div class="col-md-8">
 
                         <nav class="navbar navbar-expand-lg navbar-light">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
                             </button>
-                          
+
                             <div class="collapse navbar-collapse navbar__navbar-collapse" id="navbarTogglerDemo03">
-                              <ul class="navbar-nav mt-2 mt-lg-0 navbar__navbar-collapse__navbar-ul">
-                                <li class="nav-item navbar__navbar-collapse__navbar-ul--item active">
-                                  <a class="nav-link" href="#">الرئيسية <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item navbar__navbar-collapse__navbar-ul--item">
-                                  <a class="nav-link" href="#">إمارة الرياض</a>
-                                </li>
-                                <li class="nav-item navbar__navbar-collapse__navbar-ul--item">
-                                  <a class="nav-link" href="#">الخدمات الإلكترونية</a>
-                                </li>
-                                <li class="nav-item navbar__navbar-collapse__navbar-ul--item">
-                                  <a class="nav-link" href="#"> البيانات المفتوحة</a>
-                                </li>
-                                <li class="nav-item navbar__navbar-collapse__navbar-ul--item">
-                                  <a class="nav-link" href="#"> المركز الأعلامى</a>
-                                </li>
-                                <li id="search-icon" class="nav-item navbar__navbar-collapse__navbar-ul--item">
-                                  <a class="nav-link" href="#"><img src="assets/images/search.svg"></a>
-                                </li>
-                              </ul>
+                                <ul class="navbar-nav mt-2 mt-lg-0 navbar__navbar-collapse--list">
+                                    <li class="nav-item navbar__navbar-collapse--list-item active">
+                                        <a class="nav-link navbar__navbar-collapse--link" href="#">
+                                            الرئيسية <span class="sr-only">(current)</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item navbar__navbar-collapse--list-item">
+                                        <a class="nav-link navbar__navbar-collapse--link" href="#">إمارة الرياض</a>
+                                    </li>
+                                    <li class="nav-item navbar__navbar-collapse--list-item">
+                                        <a class="nav-link navbar__navbar-collapse--link" href="#">الخدمات
+                                            الإلكترونية</a>
+                                    </li>
+                                    <li class="nav-item navbar__navbar-collapse--list-item">
+                                        <a class="nav-link navbar__navbar-collapse--link" href="#"> البيانات
+                                            المفتوحة</a>
+                                    </li>
+                                    <li class="nav-item navbar__navbar-collapse--list-item">
+                                        <a class="nav-link navbar__navbar-collapse--link" href="#"> المركز الأعلامى</a>
+                                    </li>
+                                    <li id="search-icon" class="nav-item navbar__navbar-collapse--list-item">
+                                        <a class="nav-link navbar__navbar-collapse--link" href="#">
+                                            <img class="navbar__navbar-collapse--img" src="assets/images/search.svg">
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                          </nav>
-                        
+                        </nav>
+
                     </div>
 
                     <!-- End Nav -->
@@ -109,52 +132,80 @@
 
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators carousel__carousel-indicators">
-                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active carousel__carousel-indicators--item"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="1" class="carousel__carousel-indicators--item"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="2" class="carousel__carousel-indicators--item"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0"
+                                class="active carousel__carousel-indicators--item"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"
+                                class="carousel__carousel-indicators--item"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"
+                                class="carousel__carousel-indicators--item"></li>
                         </ol>
                         <div class="carousel-inner carousel__carousel-inner">
-                          <div class="carousel-item carousel__carousel-inner--item active">
-                            <img src="assets/images/slider-img-one.jpg" class="d-block w-100" alt="img1">
-                            <div class="carousel__carousel-inner--item-main-content">
-                                <h1>اليوم الوطني (89) معاً نجدد الولاء</h1>
-                                <h3>وطن طموح مواطنه مسؤول</h3>
-                                <P>
-                                    إنّ نهضة أي أمة لا تستقيم إذا لم تبنَ على أسس أصيلة وبنيان متين، ونحنُ في بلادنا نتذكّر بداية قصة مجدنا ونعتز بما لدينا من قيم تشكل فيما بينها لبنات
-                                </P>
-                                <button>
-                                    <img src="assets/images/arrow.svg"> <span>عرض التفاصيل </span>
-                                </button>
+
+                            <div class="carousel-item carousel__carousel-inner--item active">
+                                <img class="carousel__carousel-inner--img" src="assets/images/slider-img-one.jpg"
+                                    class="d-block w-100" alt="img1">
+
+                                <div class="carousel__carousel-inner--content">
+                                    <h1 class="carousel__carousel-inner--heading-one">اليوم الوطني (89) معاً نجدد الولاء
+                                    </h1>
+                                    <h3 class="carousel__carousel-inner--heading-three">وطن طموح مواطنه مسؤول</h3>
+                                    <P class="carousel__carousel-inner--pragraph">
+                                        إنّ نهضة أي أمة لا تستقيم إذا لم تبنَ على أسس أصيلة وبنيان متين، ونحنُ في بلادنا
+                                        نتذكّر بداية قصة مجدنا ونعتز بما لدينا من قيم تشكل فيما بينها لبنات
+                                    </P>
+                                    <button class="carousel__carousel-inner--see-more">
+                                        <img class="carousel__carousel-inner--see-more-img"
+                                            src="assets/images/arrow.svg">
+                                        <span class="carousel__carousel-inner--see-more-span">عرض التفاصيل </span>
+                                    </button>
+                                </div>
+
                             </div>
-                          </div>
-                          <div class="carousel-item carousel__carousel-inner--item">
-                            <img src="assets/images/slider-img-two.jpg" class="d-block w-100" alt="img2">
-                            <div class="carousel__carousel-inner--item-main-content">
-                                <h1>اليوم الوطني (89) معاً نجدد الولاء</h1>
-                                <h3>وطن طموح مواطنه مسؤول</h3>
-                                <P>
-                                    إنّ نهضة أي أمة لا تستقيم إذا لم تبنَ على أسس أصيلة وبنيان متين، ونحنُ في بلادنا نتذكّر بداية قصة مجدنا ونعتز بما لدينا من قيم تشكل فيما بينها لبنات
-                                </P>
-                                <button>
-                                    <img src="assets/images/arrow.svg"> <span>عرض التفاصيل </span>
-                                </button>
+
+                            <div class="carousel-item carousel__carousel-inner--item">
+                                <img class="carousel__carousel-inner--img" src="assets/images/slider-img-two.jpg"
+                                    class="d-block w-100" alt="img2">
+
+                                <div class="carousel__carousel-inner--content">
+                                    <h1 class="carousel__carousel-inner--heading-one">اليوم الوطني (89) معاً نجدد الولاء
+                                    </h1>
+                                    <h3 class="carousel__carousel-inner--heading-three">وطن طموح مواطنه مسؤول</h3>
+                                    <P class="carousel__carousel-inner--pragraph">
+                                        إنّ نهضة أي أمة لا تستقيم إذا لم تبنَ على أسس أصيلة وبنيان متين، ونحنُ في بلادنا
+                                        نتذكّر بداية قصة مجدنا ونعتز بما لدينا من قيم تشكل فيما بينها لبنات
+                                    </P>
+                                    <button class="carousel__carousel-inner--see-more">
+                                        <img class="carousel__carousel-inner--see-more-img"
+                                            src="assets/images/arrow.svg">
+                                        <span class="carousel__carousel-inner--see-more-span">عرض التفاصيل </span>
+                                    </button>
+                                </div>
+
                             </div>
-                          </div>
-                          <div class="carousel-item carousel__carousel-inner--item">
-                            <img src="assets/images/slider-img-one.jpg" class="d-block w-100" alt="img3">
-                            <div class="carousel__carousel-inner--item-main-content">
-                                <h1>اليوم الوطني (89) معاً نجدد الولاء</h1>
-                                <h3>وطن طموح مواطنه مسؤول</h3>
-                                <P>
-                                    إنّ نهضة أي أمة لا تستقيم إذا لم تبنَ على أسس أصيلة وبنيان متين، ونحنُ في بلادنا نتذكّر بداية قصة مجدنا ونعتز بما لدينا من قيم تشكل فيما بينها لبنات
-                                </P>
-                                <button>
-                                    <img src="assets/images/arrow.svg"> <span>عرض التفاصيل </span>
-                                </button>
+
+                            <div class="carousel-item carousel__carousel-inner--item">
+                                <img class="carousel__carousel-inner--img" src="assets/images/slider-img-one.jpg"
+                                    class="d-block w-100" alt="img3">
+
+                                <div class="carousel__carousel-inner--content">
+                                    <h1 class="carousel__carousel-inner--heading-one">اليوم الوطني (89) معاً نجدد الولاء
+                                    </h1>
+                                    <h3 class="carousel__carousel-inner--heading-three">وطن طموح مواطنه مسؤول</h3>
+                                    <P class="carousel__carousel-inner--pragraph">
+                                        إنّ نهضة أي أمة لا تستقيم إذا لم تبنَ على أسس أصيلة وبنيان متين، ونحنُ في بلادنا
+                                        نتذكّر بداية قصة مجدنا ونعتز بما لدينا من قيم تشكل فيما بينها لبنات
+                                    </P>
+                                    <button class="carousel__carousel-inner--see-more">
+                                        <img class="carousel__carousel-inner--see-more-img"
+                                            src="assets/images/arrow.svg">
+                                        <span class="carousel__carousel-inner--see-more-span">عرض التفاصيل </span>
+                                    </button>
+                                </div>
+
                             </div>
-                          </div>
+
                         </div>
-                      </div>
+                    </div>
 
                     <!-- End Slider -->
 
@@ -172,13 +223,21 @@
                 <div class="row">
                     <!-- Start News Title -->
                     <div class="news__title">
-                        <ul id="change-tab" class="nav nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="#latestnews"><h2>أحدث الأخبار</h2></a></li>
-                            <li><a data-toggle="tab" href="#govnews"><h2>أخبار المحافظات</h2></a></li>
+                        <ul id="change-tab" class="nav nav-tabs news__title--list">
+                            <li class="news__title--list-item active">
+                                <a class="news__title--link" data-toggle="tab" href="#latestnews">
+                                    <h2 class="news__title--heading">أحدث الأخبار</h2>
+                                </a>
+                            </li>
+                            <li class="news__title--list-item">
+                                <a class="news__title--link" data-toggle="tab" href="#govnews">
+                                    <h2 class="news__title--heading">أخبار المحافظات</h2>
+                                </a>
+                            </li>
                         </ul>
                         <a class="news__title--see-more" href="#">
-                            <span>عرض الكل</span>
-                            <img src="assets/images/arrow.svg" alt="">
+                            <span class="news__title--span">عرض الكل</span>
+                            <img class="news__title--img" src="assets/images/arrow.svg" alt="">
                         </a>
                     </div>
 
@@ -190,58 +249,70 @@
 
                     <!-- Start News Box -->
 
-                    <div class="tab-content">
+                    <div class="tab-content news__tab-content">
 
                         <div id="latestnews" class="tab-pane fade active show">
 
                             <div class="col-md-4">
                                 <div class="news-box">
                                     <div class="card news-box__card">
-                                        <img src="assets/images/img--news-one.jpg" class="card-img-top" alt="news">
-                                        <div class="card-body news-box__card__card-body">
-                                            <h6 class="card-subtitle text-muted news-box__card__card-body--card-subtitle">
-                                                الأحد 27 أكتوبر 2019</h6>
-                                            <h5 class="card-title news-box__card__card-body--card-title">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة المدنية</h5>
-                                            <p class="card-text news-box__card__card-body--card-text">
-                                                عمل على نشر المعرفة والتوعية  بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
-        
+                                        <img class="news-box__img" src="assets/images/img--news-one.jpg"
+                                            class="card-img-top" alt="news">
+                                        <div class="card-body news-box__card-body">
+                                            <h6 class="card-subtitle text-muted news-box__card-body--card-subtitle">
+                                                الأحد 27 أكتوبر 2019
+                                            </h6>
+                                            <h5 class="card-title news-box__card-body--card-title">سمو نائب أمير منطقة
+                                                الرياض يستقبل وزير الخدمة المدنية</h5>
+                                            <p class="card-text news-box__card-body--card-text">
+                                                عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف بحجم المشكلة و
+                                                التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+
                                             </p>
                                         </div>
-                                      </div>
+                                    </div>
                                 </div>
                             </div>
-        
+
                             <div class="col-md-4">
                                 <div class="news-box">
                                     <div class="card news-box__card">
-                                        <img src="assets/images/img--news-two.jpg" class="card-img-top" alt="news">
-                                        <div class="card-body news-box__card__card-body">
-                                            <h6 class="card-subtitle text-muted news-box__card__card-body--card-subtitle">
-                                                الأحد 27 أكتوبر 2019</h6>
-                                            <h5 class="card-title news-box__card__card-body--card-title">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة المدنية</h5>
-                                            <p class="card-text news-box__card__card-body--card-text">
-                                                عمل على نشر المعرفة والتوعية  بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
-        
+                                        <img class="news-box__img" src="assets/images/img--news-two.jpg"
+                                            class="card-img-top" alt="news">
+                                        <div class="card-body news-box__card-body">
+                                            <h6 class="card-subtitle text-muted news-box__card-body--card-subtitle">
+                                                الأحد 27 أكتوبر 2019
+                                            </h6>
+                                            <h5 class="card-title news-box__card-body--card-title">سمو نائب أمير منطقة
+                                                الرياض يستقبل وزير الخدمة المدنية</h5>
+                                            <p class="card-text news-box__card-body--card-text">
+                                                عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف بحجم المشكلة و
+                                                التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+
                                             </p>
                                         </div>
-                                      </div>
+                                    </div>
                                 </div>
                             </div>
-        
+
                             <div class="col-md-4">
                                 <div class="news-box">
                                     <div class="card news-box__card">
-                                        <img src="assets/images/img--news-three.jpg" class="card-img-top" alt="news">
-                                        <div class="card-body news-box__card__card-body">
-                                            <h6 class="card-subtitle text-muted news-box__card__card-body--card-subtitle">
-                                                الأحد 27 أكتوبر 2019</h6>
-                                            <h5 class="card-title news-box__card__card-body--card-title">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة المدنية</h5>
-                                            <p class="card-text news-box__card__card-body--card-text">
-                                                عمل على نشر المعرفة والتوعية  بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
-        
+                                        <img class="news-box__img" src="assets/images/img--news-three.jpg"
+                                            class="card-img-top" alt="news">
+                                        <div class="card-body news-box__card-body">
+                                            <h6 class="card-subtitle text-muted news-box__card-body--card-subtitle">
+                                                الأحد 27 أكتوبر 2019
+                                            </h6>
+                                            <h5 class="card-title news-box__card-body--card-title">سمو نائب أمير منطقة
+                                                الرياض يستقبل وزير الخدمة المدنية</h5>
+                                            <p class="card-text news-box__card-body--card-text">
+                                                عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف بحجم المشكلة و
+                                                التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+
                                             </p>
                                         </div>
-                                      </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -252,64 +323,74 @@
                             <div class="col-md-4">
                                 <div class="news-box">
                                     <div class="card news-box__card">
-                                        <img src="assets/images/img--news-three.jpg" class="card-img-top" alt="news">
-                                        <div class="card-body news-box__card__card-body">
-                                            <h6 class="card-subtitle text-muted news-box__card__card-body--card-subtitle">
-                                                الأحد 27 أكتوبر 2019</h6>
-                                            <h5 class="card-title news-box__card__card-body--card-title">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة المدنية</h5>
-                                            <p class="card-text news-box__card__card-body--card-text">
-                                                عمل على نشر المعرفة والتوعية  بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
-        
+                                        <img class="news-box__img" src="assets/images/img--news-three.jpg"
+                                            class="card-img-top" alt="news">
+                                        <div class="card-body news-box__card-body">
+                                            <h6 class="card-subtitle text-muted news-box__card-body--card-subtitle">
+                                                الأحد 27 أكتوبر 2019
+                                            </h6>
+                                            <h5 class="card-title news-box__card-body--card-title">سمو نائب أمير منطقة
+                                                الرياض يستقبل وزير الخدمة المدنية</h5>
+                                            <p class="card-text news-box__card-body--card-text">
+                                                عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف بحجم المشكلة و
+                                                التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+
                                             </p>
                                         </div>
-                                      </div>
+                                    </div>
                                 </div>
                             </div>
-        
+
                             <div class="col-md-4">
                                 <div class="news-box">
                                     <div class="card news-box__card">
-                                        <img src="assets/images/img--news-one.jpg" class="card-img-top" alt="news">
-                                        <div class="card-body news-box__card__card-body">
-                                            <h6 class="card-subtitle text-muted news-box__card__card-body--card-subtitle">
-                                                الأحد 27 أكتوبر 2019</h6>
-                                            <h5 class="card-title news-box__card__card-body--card-title">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة المدنية</h5>
-                                            <p class="card-text news-box__card__card-body--card-text">
-                                                عمل على نشر المعرفة والتوعية  بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
-        
+                                        <img class="news-box__img" src="assets/images/img--news-one.jpg"
+                                            class="card-img-top" alt="news">
+                                        <div class="card-body news-box__card-body">
+                                            <h6 class="card-subtitle text-muted news-box__card-body--card-subtitle">
+                                                الأحد 27 أكتوبر 2019
+                                            </h6>
+                                            <h5 class="card-title news-box__card-body--card-title">سمو نائب أمير منطقة
+                                                الرياض يستقبل وزير الخدمة المدنية</h5>
+                                            <p class="card-text news-box__card-body--card-text">
+                                                عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف بحجم المشكلة و
+                                                التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+
                                             </p>
                                         </div>
-                                      </div>
+                                    </div>
                                 </div>
                             </div>
-        
+
                             <div class="col-md-4">
                                 <div class="news-box">
                                     <div class="card news-box__card">
-                                        <img src="assets/images/img--news-two.jpg" class="card-img-top" alt="news">
-                                        <div class="card-body news-box__card__card-body">
-                                            <h6 class="card-subtitle text-muted news-box__card__card-body--card-subtitle">
-                                                الأحد 27 أكتوبر 2019</h6>
-                                            <h5 class="card-title news-box__card__card-body--card-title">سمو نائب أمير منطقة الرياض يستقبل وزير الخدمة المدنية</h5>
-                                            <p class="card-text news-box__card__card-body--card-text">
-                                                عمل على نشر المعرفة والتوعية  بمرض الفصام من خلال التعريف بحجم المشكلة و التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
-        
+                                        <img class="news-box__img" src="assets/images/img--news-two.jpg"
+                                            class="card-img-top" alt="news">
+                                        <div class="card-body news-box__card-body">
+                                            <h6 class="card-subtitle text-muted news-box__card-body--card-subtitle">
+                                                الأحد 27 أكتوبر 2019
+                                            </h6>
+                                            <h5 class="card-title news-box__card-body--card-title">سمو نائب أمير منطقة
+                                                الرياض يستقبل وزير الخدمة المدنية</h5>
+                                            <p class="card-text news-box__card-body--card-text">
+                                                عمل على نشر المعرفة والتوعية بمرض الفصام من خلال التعريف بحجم المشكلة و
+                                                التعاون مع الجهات ذات العلاقة لتحسين حياة ودمج هذه الفئة في المجتمع
+
                                             </p>
                                         </div>
-                                      </div>
+                                    </div>
                                 </div>
                             </div>
 
                         </div>
 
+
+                        <!-- End News Box -->
+
+
                     </div>
-
-
-                    <!-- End News Box -->
-                    
-
                 </div>
-            </div>
         </section>
 
 
@@ -322,17 +403,19 @@
                 <div class="row">
                     <!-- Start Services Titles -->
                     <div class="services__title">
-                        <ul>
-                            <li class="active"><h2>الخدمات الإلكترونية</h2></li>
+                        <ul class="services__title--list">
+                            <li class="services__title--item active">
+                                <h2 class="services__title--heading">الخدمات الإلكترونية</h2>
+                            </li>
                         </ul>
-                        <a href="#">
-                            <span>عرض الكل</span>
-                            <img src="assets/images/arrow.svg" alt="">
+                        <a class="services__title--see-more" href="#">
+                            <span class="services__title--span">عرض الكل</span>
+                            <img class="services__title--img" src="assets/images/arrow.svg" alt="">
                         </a>
                     </div>
 
-                    <div class="border-space">
-                        <div class="border-space__seprated"></div>
+                    <div class="services__border-space">
+                        <div class="services__border-space--seprated"></div>
                     </div>
 
                     <!-- End Services Titles -->
@@ -343,11 +426,12 @@
                         <div class="box-service">
                             <img class="box-service__img" src="assets/images/img-service-one.jpg" alt="">
                             <img class="box-service__img-icon" src="assets/images/eye.svg" alt="">
-                            <img class="box-service__img-icon box-service__img-icon--fade" src="assets/images/eye.svg" alt="">
+                            <img class="box-service__img-icon box-service__img-icon--fade" src="assets/images/eye.svg"
+                                alt="">
                             <p class="box-service__short-p">خدمة تملك العقار</p>
                             <div class="box-service__overlay">
-                                <p class="box-service__overlay__title">خدمة تملك العقار</p>
-                                <p class="box-service__overlay__long-p">
+                                <p class="box-service__overlay--title">خدمة تملك العقار</p>
+                                <p class="box-service__overlay--long-p">
                                     ​​يعد منتزه السحاب من أبرز المنتزهات الجميلة السياحية في مدينة أبها
                                 </p>
                             </div>
@@ -358,11 +442,12 @@
                         <div class="box-service">
                             <img class="box-service__img" src="assets/images/img-service-two.jpg" alt="">
                             <img class="box-service__img-icon" src="assets/images/eye.svg" alt="">
-                            <img class="box-service__img-icon box-service__img-icon--fade" src="assets/images/eye.svg" alt="">
+                            <img class="box-service__img-icon box-service__img-icon--fade" src="assets/images/eye.svg"
+                                alt="">
                             <p class="box-service__short-p">خدمة الإستدعاء الألكترونى</p>
                             <div class="box-service__overlay">
-                                <p class="box-service__overlay__title">خدمة الإستدعاء الألكترونى</p>
-                                <p class="box-service__overlay__long-p">
+                                <p class="box-service__overlay--title">خدمة الإستدعاء الألكترونى</p>
+                                <p class="box-service__overlay--long-p">
                                     ​​يعد منتزه السحاب من أبرز المنتزهات الجميلة السياحية في مدينة أبها
                                 </p>
                             </div>
@@ -373,11 +458,12 @@
                         <div class="box-service">
                             <img class="box-service__img" src="assets/images/img-service-three.jpg" alt="">
                             <img class="box-service__img-icon" src="assets/images/eye.svg" alt="">
-                            <img class="box-service__img-icon box-service__img-icon--fade" src="assets/images/eye.svg" alt="">
+                            <img class="box-service__img-icon box-service__img-icon--fade" src="assets/images/eye.svg"
+                                alt="">
                             <p class="box-service__short-p">خدمة التعديات على الاراضى الحكومية</p>
                             <div class="box-service__overlay">
-                                <p class="box-service__overlay__title">خدمة التعديات على الاراضى الحكومية</p>
-                                <p class="box-service__overlay__long-p">
+                                <p class="box-service__overlay--title">خدمة التعديات على الاراضى الحكومية</p>
+                                <p class="box-service__overlay--long-p">
                                     ​​يعد منتزه السحاب من أبرز المنتزهات الجميلة السياحية في مدينة أبها
                                 </p>
                             </div>
@@ -388,11 +474,12 @@
                         <div class="box-service">
                             <img class="box-service__img" src="assets/images/img-service-four.jpg" alt="">
                             <img class="box-service__img-icon" src="assets/images/eye.svg" alt="">
-                            <img class="box-service__img-icon box-service__img-icon--fade" src="assets/images/eye.svg" alt="">
+                            <img class="box-service__img-icon box-service__img-icon--fade" src="assets/images/eye.svg"
+                                alt="">
                             <p class="box-service__short-p">خدمة السجناء</p>
                             <div class="box-service__overlay">
-                                <p class="box-service__overlay__title">خدمة السجناء</p>
-                                <p class="box-service__overlay__long-p">
+                                <p class="box-service__overlay--title">خدمة السجناء</p>
+                                <p class="box-service__overlay--long-p">
                                     ​​يعد منتزه السحاب من أبرز المنتزهات الجميلة السياحية في مدينة أبها
                                 </p>
                             </div>
@@ -403,7 +490,7 @@
 
 
                     <!-- End services Box -->
-                    
+
                 </div>
             </div>
         </section>
@@ -416,124 +503,155 @@
         <section class="survey">
             <div class="container-fluid">
                 <div class="row">
-                    
-                <!-- Start right Side -->
 
-                <div class="col-lg-9">
-                    <div class="survey__rigth-box-survey">
+                    <!-- Start right Side -->
 
-                        <!-- Start Slider -->
-    
-                        <div id="slider-survey" class="carousel carousel-survey slide" data-ride="carousel">
-                            <ol class="carousel-indicators carousel-survey__carousel-indicators">
-                              <li data-target="#slider-survey" data-slide-to="0" class="active carousel-survey__carousel-indicators--item"></li>
-                              <li data-target="#slider-survey" data-slide-to="1" class="carousel-survey__carousel-indicators--item"></li>
-                              <li data-target="#slider-survey" data-slide-to="2" class="carousel-survey__carousel-indicators--item"></li>
-                            </ol>
-                            <div class="carousel-inner carousel-survey__carousel-inner">
+                    <div class="col-lg-9">
+                        <div class="survey__right-box">
 
-                              <div class="carousel-item carousel-survey__carousel-inner--item w-100 active">
-                                <img src="assets/images/bg-survey.jpg" class="d-block w-100" alt="img1">
-                                <div class="carousel-survey__carousel-inner--item-content">
-                                    <h1>تطبيقات الجوال</h1>
-                                    <h3>تطبيق إمارة منطقة الرياض 01</h3>
-                                    <P>
-                                        تطبيق إمارة منطقة الرياض للأجهزة الذكية هو امتداد للمنتجات والخدمات الإلكترونية التي تقدمها إمارة منطقة الرياض .
-                                    </P>
-                                    <button>
-                                        <img src="assets/images/avilable-on-ios.png">
-                                    </button>
-                                    <button>
-                                        <img src="assets/images/avilable-on-google.png">
-                                    </button>
-                                </div>
-                                <div class="carousel-survey__carousel-inner--item-content--img">
-                                    <img src="assets/images/survey-mob.png" alt="survey">
-                                </div>
-                              </div>
+                            <!-- Start Slider -->
 
-                              <div class="carousel-item carousel-survey__carousel-inner--item w-100">
-                                <img src="assets/images/bg-survey.jpg" class="d-block w-100" alt="img1">
-                                <div class="carousel-survey__carousel-inner--item-content">
-                                    <h1>تطبيقات الجوال</h1>
-                                    <h3>تطبيق إمارة منطقة الرياض 01</h3>
-                                    <P>
-                                        تطبيق إمارة منطقة الرياض للأجهزة الذكية هو امتداد للمنتجات والخدمات الإلكترونية التي تقدمها إمارة منطقة الرياض .
-                                    </P>
-                                    <button>
-                                        <img src="assets/images/avilable-on-ios.png">
-                                    </button>
-                                    <button>
-                                        <img src="assets/images/avilable-on-google.png">
-                                    </button>
-                                </div>
-                                <div class="carousel-survey__carousel-inner--item-content--img">
-                                    <img src="assets/images/survey-mob.png" alt="survey">
-                                </div>
-                              </div>
+                            <div id="slider-survey"
+                                class="carousel survey__right-box--carousel-survey slide carousel-fade"
+                                data-ride="carousel">
+                                <ol class="carousel-indicators survey__right-box--carousel-indicators">
+                                    <li data-target="#slider-survey" data-slide-to="0"
+                                        class="active survey__right-box--item"></li>
+                                    <li data-target="#slider-survey" data-slide-to="1" class="survey__right-box--item">
+                                    </li>
+                                    <li data-target="#slider-survey" data-slide-to="2" class="survey__right-box--item">
+                                    </li>
+                                </ol>
+                                <div class="carousel-inner survey__right-box--carousel-inner">
 
-                              <div class="carousel-item carousel-survey__carousel-inner--item w-100">
-                                <img src="assets/images/bg-survey.jpg" class="d-block w-100" alt="img1">
-                                <div class="carousel-survey__carousel-inner--item-content">
-                                    <h1>تطبيقات الجوال</h1>
-                                    <h3>تطبيق إمارة منطقة الرياض 01</h3>
-                                    <P>
-                                        تطبيق إمارة منطقة الرياض للأجهزة الذكية هو امتداد للمنتجات والخدمات الإلكترونية التي تقدمها إمارة منطقة الرياض .
-                                    </P>
-                                    <button>
-                                        <img src="assets/images/avilable-on-ios.png">
-                                    </button>
-                                    <button>
-                                        <img src="assets/images/avilable-on-google.png">
-                                    </button>
-                                </div>
-                                <div class="carousel-survey__carousel-inner--item-content--img">
-                                    <img src="assets/images/survey-mob.png" alt="survey">
-                                </div>
-                              </div>
+                                    <div class="carousel-item survey__right-box--slide w-100 active">
+                                        <img class="survey__right-box--img" src="assets/images/bg-survey.jpg"
+                                            class="d-block w-100" alt="img1">
+                                        <div class="survey__right-box--content">
+                                            <h1 class="survey__right-box--heading-one">تطبيقات الجوال</h1>
+                                            <h3 class="survey__right-box--heading-three">تطبيق إمارة منطقة الرياض 01
+                                            </h3>
+                                            <P class="survey__right-box--pragraph">
+                                                تطبيق إمارة منطقة الرياض للأجهزة الذكية هو امتداد للمنتجات والخدمات
+                                                الإلكترونية التي تقدمها إمارة منطقة الرياض .
+                                            </P>
+                                            <button class="survey__right-box--download">
+                                                <img class="survey__right-box--download-img"
+                                                    src="assets/images/avilable-on-ios.png">
+                                            </button>
+                                            <button class="survey__right-box--download">
+                                                <img class="survey__right-box--download-img"
+                                                    src="assets/images/avilable-on-google.png">
+                                            </button>
+                                        </div>
+                                        <div class="survey__right-box--mob">
+                                            <img class="survey__right-box--mob-img" src="assets/images/survey-mob.png"
+                                                alt="survey">
+                                        </div>
+                                    </div>
 
+                                    <div class="carousel-item survey__right-box--slide w-100">
+                                        <img class="survey__right-box--img" src="assets/images/bg-survey1.jpg"
+                                            class="d-block w-100" alt="img1">
+                                        <div class="survey__right-box--content">
+                                            <h1 class="survey__right-box--heading-one">تطبيقات الجوال</h1>
+                                            <h3 class="survey__right-box--heading-three">تطبيق إمارة منطقة الرياض 01
+                                            </h3>
+                                            <P class="survey__right-box--pragraph">
+                                                تطبيق إمارة منطقة الرياض للأجهزة الذكية هو امتداد للمنتجات والخدمات
+                                                الإلكترونية التي تقدمها إمارة منطقة الرياض .
+                                            </P>
+                                            <button class="survey__right-box--download">
+                                                <img class="survey__right-box--download-img"
+                                                    src="assets/images/avilable-on-ios.png">
+                                            </button>
+                                            <button class="survey__right-box--download">
+                                                <img class="survey__right-box--download-img"
+                                                    src="assets/images/avilable-on-google.png">
+                                            </button>
+                                        </div>
+                                        <div class="survey__right-box--mob">
+                                            <img class="survey__right-box--mob-img" src="assets/images/survey-mob.png"
+                                                alt="survey">
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item survey__right-box--slide w-100">
+                                        <img class="survey__right-box--img" src="assets/images/bg-survey2.jpg"
+                                            class="d-block w-100" alt="img1">
+                                        <div class="survey__right-box--content">
+                                            <h1 class="survey__right-box--heading-one">تطبيقات الجوال</h1>
+                                            <h3 class="survey__right-box--heading-three">تطبيق إمارة منطقة الرياض 01
+                                            </h3>
+                                            <P class="survey__right-box--pragraph">
+                                                تطبيق إمارة منطقة الرياض للأجهزة الذكية هو امتداد للمنتجات والخدمات
+                                                الإلكترونية التي تقدمها إمارة منطقة الرياض .
+                                            </P>
+                                            <button class="survey__right-box--download">
+                                                <img class="survey__right-box--download-img"
+                                                    src="assets/images/avilable-on-ios.png">
+                                            </button>
+                                            <button class="survey__right-box--download">
+                                                <img class="survey__right-box--download-img"
+                                                    src="assets/images/avilable-on-google.png">
+                                            </button>
+                                        </div>
+                                        <div class="survey__right-box--mob">
+                                            <img class="survey__right-box--mob-img" src="assets/images/survey-mob.png"
+                                                alt="survey">
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
                             </div>
-                          </div>
-    
-                        <!-- End Slider -->
 
+                            <!-- End Slider -->
+
+                        </div>
                     </div>
-                </div>
 
-                <!-- End right Side -->
-                    
-                <!-- Start left Side -->
+                    <!-- End right Side -->
 
-                <div class="col-lg-3">
-                    <div class="survey__left-box-survey">
-                        <h3 class="survey__left-box-survey--title">استطلاع الرأي</h3>
-                        <p class="survey__left-box-survey--p">ما رأيك في الموقع بخدماته التي يقدمها؟</p>
-                        <div class="form-check survey__left-box-survey__form-check">
-                            <input class="form-check-input survey__left-box-survey__form-check--input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                            <label class="form-check-label survey__left-box-survey__form-check--label" for="exampleRadios1">
-                              ممتازة
-                            </label>
-                          </div>
-                          <div class="form-check survey__left-box-survey__form-check">
-                            <input class="form-check-input survey__left-box-survey__form-check--input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                            <label class="form-check-label survey__left-box-survey__form-check--label" for="exampleRadios2">
-                              جيدة
-                            </label>
-                          </div>
-                          <div class="form-check survey__left-box-survey__form-check">
-                            <input class="form-check-input survey__left-box-survey__form-check--input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                            <label class="form-check-label survey__left-box-survey__form-check--label" for="exampleRadios3">
-                              مقبولة
-                            </label>
-                          </div>
-                          <div class="form-btn survey__left-box-survey__form-btn">
-                            <button type="button" class="btn btn-success btn-sm survey__left-box-survey__form-btn--btn"><span>تصويت</span></button>
-                            <button type="button" class="btn btn-light btn-sm survey__left-box-survey__form-btn--btn"><span>النتائج</span></button>
-                          </div>
+                    <!-- Start left Side -->
+
+                    <div class="col-lg-3">
+                        <div class="survey__left-box">
+                            <h3 class="survey__left-box--title">استطلاع الرأي</h3>
+                            <p class="survey__left-box--pragraph">ما رأيك في الموقع بخدماته التي يقدمها؟</p>
+                            <div class="form-check survey__left-box--form-check">
+                                <input class="form-check-input survey__left-box--input" type="radio"
+                                    name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label survey__left-box--label" for="exampleRadios1">
+                                    ممتازة
+                                </label>
+                            </div>
+                            <div class="form-check survey__left-box--form-check">
+                                <input class="form-check-input survey__left-box--input" type="radio"
+                                    name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label survey__left-box--label" for="exampleRadios2">
+                                    جيدة
+                                </label>
+                            </div>
+                            <div class="form-check survey__left-box--form-check">
+                                <input class="form-check-input survey__left-box--input" type="radio"
+                                    name="exampleRadios" id="exampleRadios3" value="option3">
+                                <label class="form-check-label survey__left-box--label" for="exampleRadios3">
+                                    مقبولة
+                                </label>
+                            </div>
+                            <div class="form-btn survey__left-box--form-btn">
+                                <button type="button" class="btn btn-success btn-sm survey__left-box--action-btn"><span
+                                        class="survey__left-box--span">تصويت</span></button>
+                                <button type="button" class="btn btn-light btn-sm survey__left-box--action-btn"><span
+                                        class="survey__left-box--span">النتائج</span></button>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- End left Side -->
+                    <!-- End left Side -->
 
                 </div>
             </div>
@@ -552,11 +670,14 @@
                             <h4 class="footer__list--heading">
                                 إمارة الرياض
                             </h4>
-                            <ul class="footer__list__ul">
-                                <li class="footer__list__ul--li"><a href="#">عن الإمارة</a></li>
-                                <li class="footer__list__ul--li"><a href="#">أمراء المنطقة</a></li>
-                                <li class="footer__list__ul--li"><a href="#">محافظات المنطقة</a></li>
-                                <li class="footer__list__ul--li"><a href="#">القسم النسوى</a></li>
+                            <ul class="footer__list--ul">
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">عن الإمارة</a></li>
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">أمراء المنطقة</a>
+                                </li>
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">محافظات المنطقة</a>
+                                </li>
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">القسم النسوى</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -566,13 +687,19 @@
                             <h4 class="footer__list--heading">
                                 الخدمات الإلكترونية
                             </h4>
-                            <ul class="footer__list__ul">
-                                <li class="footer__list__ul--li"><a href="#">خدمات الزواج من الأجانب</a></li>
-                                <li class="footer__list__ul--li"><a href="#">خدمة السجناء</a></li>
-                                <li class="footer__list__ul--li"><a href="#">خدمة إنفاذ الحكم الشرعى</a></li>
-                                <li class="footer__list__ul--li"><a href="#">خدمة تملك عقار</a></li>
-                                <li class="footer__list__ul--li"><a href="#">خدمة التعديات على الأراضى الحكومية</a></li>
-                                <li class="footer__list__ul--li"><a href="#">خدمة الاستدعاء الإلكترونى</a></li>
+                            <ul class="footer__list--ul">
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">خدمات الزواج من
+                                        الأجانب</a></li>
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">خدمة السجناء</a>
+                                </li>
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">خدمة إنفاذ الحكم
+                                        الشرعى</a></li>
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">خدمة تملك عقار</a>
+                                </li>
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">خدمة التعديات على
+                                        الأراضى الحكومية</a></li>
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">خدمة الاستدعاء
+                                        الإلكترونى</a></li>
                             </ul>
                         </div>
                     </div>
@@ -582,13 +709,15 @@
                             <h4 class="footer__list--heading">
                                 المركز الإعلامى
                             </h4>
-                            <ul class="footer__list__ul">
-                                <li class="footer__list__ul--li"><a href="#">الأخبار</a></li>
-                                <li class="footer__list__ul--li"><a href="#">البيانات المفتوحة</a></li>
-                                <li class="footer__list__ul--li"><a href="#">معرض الصور</a></li>
-                                <li class="footer__list__ul--li"><a href="#">معرض الفيديو</a></li>
-                                <li class="footer__list__ul--li"><a href="#">الإعلانات</a></li>
-                                <li class="footer__list__ul--li"><a href="#">التقارير</a></li>
+                            <ul class="footer__list--ul">
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">الأخبار</a></li>
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">البيانات
+                                        المفتوحة</a></li>
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">معرض الصور</a></li>
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">معرض الفيديو</a>
+                                </li>
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">الإعلانات</a></li>
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">التقارير</a></li>
                             </ul>
                         </div>
                     </div>
@@ -598,12 +727,17 @@
                             <h4 class="footer__list--heading">
                                 روابط مفيدة
                             </h4>
-                            <ul class="footer__list__ul">
-                                <li class="footer__list__ul--li"><a href="#">المجلس الإلكترونى</a></li>
-                                <li class="footer__list__ul--li"><a href="#">وارة الداخلية</a></li>
-                                <li class="footer__list__ul--li"><a href="#">مركز المعلومات الوطنى</a></li>
-                                <li class="footer__list__ul--li"><a href="#">بوابة المشتريات الحكومية</a></li>
-                                <li class="footer__list__ul--li"><a href="#">الأنظمة والوائح الحكومية</a></li>
+                            <ul class="footer__list--ul">
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">المجلس
+                                        الإلكترونى</a></li>
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">وارة الداخلية</a>
+                                </li>
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">مركز المعلومات
+                                        الوطنى</a></li>
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">بوابة المشتريات
+                                        الحكومية</a></li>
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">الأنظمة والوائح
+                                        الحكومية</a></li>
                             </ul>
                         </div>
                     </div>
@@ -611,13 +745,14 @@
                     <div class="col-md-2">
                         <div class="footer__list">
                             <h4 class="footer__list--heading">
-                               تواصل معنا
+                                تواصل معنا
                             </h4>
-                            <ul class="footer__list__ul">
-                                <li class="footer__list__ul--li"><a href="#">إتصل بنا</a></li>
-                                <li class="footer__list__ul--li"><a href="#">الأسئلة الشائعة</a></li>
-                                <li class="footer__list__ul--li"><a href="#">التصويت</a></li>
-                                <li class="footer__list__ul--li"><a href="#">التوظيف</a></li>
+                            <ul class="footer__list--ul">
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">إتصل بنا</a></li>
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">الأسئلة الشائعة</a>
+                                </li>
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">التصويت</a></li>
+                                <li class="footer__list--li"><a class="footer__list--link" href="#">التوظيف</a></li>
                             </ul>
                         </div>
                     </div>
@@ -648,11 +783,15 @@
 
                     <div class="col-sm-6">
                         <div class="copy-right__left-side">
-                            <ul class="copy-right__left-side__ul">
-                                <li class="copy-right__left-side__ul--li"><a href="#">خريطة الموقع</a></li>
-                                <li class="copy-right__left-side__ul--li"><a href="#">سياسة الخصوصية</a></li>
-                                <li class="copy-right__left-side__ul--li"><a href="#">شروط الأستخدام</a></li>
-                                <li class="copy-right__left-side__ul--li"><a href="#">اتفاقية مستوى الخدمة</a></li>
+                            <ul class="copy-right__left-side--ul">
+                                <li class="copy-right__left-side--li"><a class="copy-right__left-side--link"
+                                        href="#">خريطة الموقع</a></li>
+                                <li class="copy-right__left-side--li"><a class="copy-right__left-side--link"
+                                        href="#">سياسة الخصوصية</a></li>
+                                <li class="copy-right__left-side--li"><a class="copy-right__left-side--link"
+                                        href="#">شروط الأستخدام</a></li>
+                                <li class="copy-right__left-side--li"><a class="copy-right__left-side--link"
+                                        href="#">اتفاقية مستوى الخدمة</a></li>
                             </ul>
                         </div>
                     </div>
@@ -675,11 +814,16 @@
     <!-- JQuery 3 Link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Popper Link -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
     <!-- Bootstrap 4 Link -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <!-- main.js Link -->
     <script src="assets/js/main.js"></script>
-    
+
 </body>
+
 </html>

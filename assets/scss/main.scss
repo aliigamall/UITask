@@ -1,40 +1,40 @@
-
 // Fonts
 
 @font-face {
-    font-family: 'din-next-arabic';
-    src: url(../fonts/DinNextRegular.eot);
-    src: url(../fonts/DinNextRegular.eot) format('embedded-opentype'),
-        url(../fonts/DinNextRegular.woff) format('woff'),
-        url(../fonts/DinNextRegular.ttf) format('truetype'),
-        url(../fonts/DinNextRegular.svg) format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "din-next-arabic";
+  src: url(../fonts/DinNextRegular.eot);
+  src: url(../fonts/DinNextRegular.eot) format("embedded-opentype"),
+    url(../fonts/DinNextRegular.woff) format("woff"),
+    url(../fonts/DinNextRegular.ttf) format("truetype"),
+    url(../fonts/DinNextRegular.svg) format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'din-next-arabic-med';
-    src: url(../fonts/DinNextMedium.eot);
-    src: url(../fonts/DinNextMedium.eot) format('embedded-opentype'),
-        url(../fonts/DinNextMedium.woff) format('woff'),
-        url(../fonts/DinNextMedium.ttf) format('truetype'),
-        url(../fonts/DinNextMedium.svg) format('svg');
-    font-weight: 500;
-    font-style: normal;
+  font-family: "din-next-arabic-med";
+  src: url(../fonts/DinNextMedium.eot);
+  src: url(../fonts/DinNextMedium.eot) format("embedded-opentype"),
+    url(../fonts/DinNextMedium.woff) format("woff"),
+    url(../fonts/DinNextMedium.ttf) format("truetype"),
+    url(../fonts/DinNextMedium.svg) format("svg");
+  font-weight: 500;
+  font-style: normal;
 }
 
 /****************************************************************/
 
 // Reset
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-ul, ol{
-    list-style: none;
+ul,
+ol {
+  list-style: none;
 }
 
 /*****************************************************************/
@@ -45,121 +45,127 @@ $scrollbarBG: rgb(230, 230, 230);
 $thumbBG: #080;
 
 body::-webkit-scrollbar {
-    width: 11px;
-  }
-  body {
-    scrollbar-width: thin;
-    scrollbar-color: $thumbBG $scrollbarBG;
-  }
-  body::-webkit-scrollbar-track {
-    background: $scrollbarBG;
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: $thumbBG ;
-    border-radius: 6px;
-    border: 3px solid $scrollbarBG;
-  }
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: $thumbBG $scrollbarBG;
+}
+body::-webkit-scrollbar-track {
+  background: $scrollbarBG;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $thumbBG;
+  border-radius: 6px;
+  border: 3px solid $scrollbarBG;
+}
 
 /*********************************************************************/
 
 // Scroll Top Button & Search Page
 
-.page{
-    font-family: 'din-next-arabic';
-    .scroll-top{
-        position: fixed;
-        left: 3%;
-        bottom: 3%;
-        background-color: #cca53b;
-        transform: rotate(90deg);
-        border-radius: 50%;
-        z-index: 9999;
-        width: 40px;
-        height: 40px;
-        display: none;
-        img{
-            width: 40%;
-            position: absolute;
-            top: 17%;
-            left: 27%;
-        }
-        &:hover{
-            cursor: pointer;
-            background-color: #a5811f;
-            img{
-                animation: scrollTop .5s ease-in-out infinite alternate-reverse;
-            }
-        }
+.page {
+  font-family: "din-next-arabic";
+}
 
-        @keyframes scrollTop {
-            from{
-                transform: translateX(0px);
-            }
-            to{
-                transform: translateX(-5px);
-            }
-        }
+.scroll-top {
+  position: fixed;
+  left: 3%;
+  bottom: 3%;
+  background-color: #cca53b;
+  transform: rotate(90deg);
+  border-radius: 50%;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  display: none;
+  &:hover {
+    cursor: pointer;
+    background-color: #a5811f;
+    .scroll-top__img {
+      animation: scrollTop 0.5s ease-in-out infinite alternate-reverse;
     }
+  }
+}
+.scroll-top__img {
+  width: 40%;
+  position: absolute;
+  top: 17%;
+  left: 27%;
+}
 
-    .search-page{
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9999;
-        background-color: #000;
-        opacity: .9;
-        padding: 25% 0;
-        display: none;
-        img{
-            width: 30px;
-            position: absolute;
-            left: 2%;
-            top: 2%;
-            &:hover{
-                cursor: pointer;
-            }
-        }
-        input{
-            width: 30%;
-            border: unset;
-            border-bottom: 2px solid #080;
-            background-color: unset;
-            color: #fff;
-            font-size: 20px;
-            outline: unset;
-            text-indent: 8px;
-        }
-        button{
-            width: 7%;
-            border: unset;
-            border-bottom: 2px solid #080;
-            background-color: unset;
-            color: #fff;
-            font-size: 20px;
-            outline: unset;
-            transition: all .2s ease-in-out;
-            &:hover{
-                border: 1px solid #080;
-                background-color: #080;
-                border-radius: 4px;
-            }
-        }
-        @media (max-width: 991.98px){
-            padding: 80% 0;
-            input{
-                width: 40%;
-                font-size: 18px;
-            }
-            button{
-                width: 22%;
-                font-size: 18px;
-            }
-        }
-    }
-   
+@keyframes scrollTop {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-5px);
+  }
+}
+/*********************************************************************/
+
+// Search Page
+
+.search-page {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #000;
+  opacity: 0.9;
+  padding: 25% 0;
+  display: none;
+  @media (max-width: 991.98px) {
+    padding: 80% 0;
+  }
+}
+
+.search-page__img-close {
+  width: 30px;
+  position: absolute;
+  left: 2%;
+  top: 2%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.search-page__input-search {
+  width: 30%;
+  border: unset;
+  border-bottom: 2px solid #080;
+  background-color: unset;
+  color: #fff;
+  font-size: 20px;
+  outline: unset;
+  text-indent: 8px;
+  @media (max-width: 991.98px) {
+    width: 40%;
+    font-size: 18px;
+  }
+}
+
+.search-page__button-search {
+  width: 7%;
+  border: unset;
+  border-bottom: 2px solid #080;
+  background-color: unset;
+  color: #fff;
+  font-size: 20px;
+  outline: unset;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    border: 1px solid #080;
+    background-color: #080;
+    border-radius: 4px;
+  }
+  @media (max-width: 991.98px) {
+    width: 22%;
+    font-size: 18px;
+  }
 }
 
 /***************************************************************************/
@@ -167,18 +173,18 @@ body::-webkit-scrollbar {
 // Import SCSS Files
 
 // Header & Footer Style
-@import 'compunants/_global';
+@import "compunants/_global";
 
 // Main Slider Style
-@import 'compunants/_slider';
+@import "compunants/_slider";
 
 // News Section Style
-@import 'compunants/_news';
+@import "compunants/_news";
 
 // Services Section Style
-@import 'compunants/_services';
+@import "compunants/_services";
 
 // Survey Section Style
-@import 'compunants/_survey';
+@import "compunants/_survey";
 
 /*****************************************************************************/
